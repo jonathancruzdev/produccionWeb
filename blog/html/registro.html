@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="../assets/img/blog.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="bg-success text-white d-flex flex-row justify-content-center align-items-center" >
+        <h1>Registro</h1>
+    </header>
+    <main class="container">
+        <div class="row m-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2 class="text-center"><i class="fa-solid fa-right-to-bracket"></i> Registrarme</h2>
+                <form action="../controles/usuarioRegistrar.php" method="post" class="card p-3">
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" type="text" id="nombre" class="form-control">
+        
+                    <label for="apellido" class="mt-3">Apellido</label>
+                    <input name="apellido" type="text" id="apellido" class="form-control">
+
+                    <label for="email" class="mt-3">Email</label>
+                    <input name="email" type="email" id="email" class="form-control">
+
+                    <label for="password" class="mt-3">Contraseña</label>
+                    <input name="password" type="text" id="password" class="form-control">
+                    <button type="submit" class="btn btn-info mt-3">Guardar</button>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+       
+    </main>
+    <footer class="bg-secondary text-white d-flex flex-row justify-content-center align-items-center">
+        <p> Blog | Producción Web | 2022</p>
+    </footer>
+</body>
+</html>

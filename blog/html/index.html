@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="assets/img/blog.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="bg-primary text-white d-flex flex-row justify-content-center align-items-center" >
+        <h1>Blog</h1>
+    </header>
+    <main class="container">
+        <div class="row m-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2 class="text-center"><i class="fa-solid fa-pencil"></i> Crear Post</h2>
+                <form action="postCrear.php" method="post" class="card p-3">
+                    <label for="titulo">Título</label>
+                    <input name="titulo" type="text" id="titulo" class="form-control">
+        
+                    <label for="id_categoria" class="mt-3">Categoría</label>
+                    <select name="id_categoria" id="id_categoria" class="form-control">
+                        <option value="1">Categoria 1</option>
+                        <option value="2">Categoria 2</option>
+                        <option value="3">Categoria 3</option>
+                    </select>
+        
+                    <label for="detalle" class="mt-3">Detalle</label>
+                    <textarea name="detalle" id="detalle" cols="30" rows="10" class="form-control"></textarea>
+                    <button type="submit" class="btn btn-info mt-3">Guardar</button>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+       
+    </main>
+    <footer class="bg-secondary text-white d-flex flex-row justify-content-center align-items-center">
+        <p> Blog | Producción Web | 2022</p>
+    </footer>
+</body>
+</html>

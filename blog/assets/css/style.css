@@ -1,0 +1,19 @@
+header {
+    height: 30vh;
+}
+
+.header-post {
+    height: 10vh;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.post-main {
+    min-height: 80vh;
+}
+
+footer {
+    min-height: 10vh;
+}
